@@ -62,11 +62,20 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  display: flex;
+  align-items: center; 
+  gap: 10px;
 }
 
-.logo:hover {
-  cursor: default;
+.logo-img {
+  height: 70px;
+  width: auto;
+  border-radius: 10%;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /* HAMBURGER MENU */
