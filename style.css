@@ -538,14 +538,102 @@ footer p {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  
+
+  #profile, 
+  .section-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    height: auto !important;
+    margin: 2rem auto !important;
+  }
+
+  .section_pic-container {
+    width: 280px; 
+    height: 280px;
+    margin: 0 auto 2rem auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section__text__p1, 
+  .section__text__p2, 
+  .title {
+    text-align: center !important;
+    width: 100%;
+  }
+
+  .btn-container, 
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    height: 10vh;
+  }
+
+  .logo {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo-img {
+    height: 40px;
+    width: auto;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 10vh;
+  }
+  #hamburger-nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  #hamburger-nav .logo-img {
+    height: 35px;
+    width: auto;
+  }
+
   #contact,
   footer {
     height: 40vh;
   }
   #profile {
-    height: 83vh;
-    margin-bottom: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0;
+    gap: 1.5rem;
   }
   article {
     font-size: 1rem;
@@ -578,9 +666,17 @@ footer p {
     text-align: center;
   }
   .section__pic-container {
-    width: auto;
-    height: 46vw;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
     justify-content: center;
+  }
+  .section__text {
+    width: 100%;
+    text-align: center;
+  }
+  .section__text__p1 {
+    margin-top: 0.5rem;
   }
   .section__text__p2 {
     font-size: 1.25rem;
